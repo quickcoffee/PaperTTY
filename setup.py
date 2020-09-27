@@ -9,7 +9,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "PaperTTY",
+    name = "papertty",
     version = "0.1.6",
     author = "Jouko Strömmer",
     author_email = "jouko.strommer@iki.fi",
