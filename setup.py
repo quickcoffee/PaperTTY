@@ -17,7 +17,6 @@ setup(
     license = "CC0(/drivers: GPL 3.0)",
     keywords = "raspberry hat eink display driver",
     url = "https://github.com/joukos/PaperTTY",
-    packages=['Pillow'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
