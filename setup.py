@@ -18,7 +18,7 @@ setup(
     keywords = "raspberry hat eink display driver",
     url = "https://github.com/joukos/PaperTTY",
     packages=['Pillow'],
-    long_description=read('README'),
+    long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
