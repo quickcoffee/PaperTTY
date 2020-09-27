@@ -1,27 +1,29 @@
-import os
-from setuptools import setup
+#!/usr/bin/env python
 
-# Utility function to read the README file.
-# Used for the long_description.  It's nice, because now 1) we have a top level
-# README file and 2) it's easier to type in the README file than to put a raw
-# string in below ...
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+import setuptools
 
-setup(
-    name = "papertty",
-    version = "0.1.6",
-    author = "Jouko Strömmer",
-    author_email = "jouko.strommer@iki.fi",
-    description = ("Python module to render a TTY or VNC on e-ink"),
-    license = "CC0(/drivers: GPL 3.0)",
-    keywords = "raspberry hat eink display driver",
-    url = "https://github.com/joukos/PaperTTY",
-    packages=['papertty',],
-    long_description=read('README.md'),
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Topic :: Utilities",
-        "License :: OSI Approved :: BSD License",
-    ],
-)
+LICENSE = 'CC0(/drivers: GPL 3.0)'
+
+if __name__ == "__main__":
+    setuptools.setup(
+name = "papertty",
+        version = "0.1.6",
+        author = "Jouko Strömmer",
+        author_email = "jouko.strommer@iki.fi",
+        description = ("Python module to render a TTY or VNC on e-ink"),
+        url='https://github.com/joukos/PaperTTY',
+        license=LICENSE,
+        
+        packages=setuptools.find_packages(),
+
+
+        classifiers=[
+            'Development Status :: 1 - Alpha',
+            'License :: OSI Approved ::' + LICENSE,
+            'Programming Language :: Python :: 3',
+            'Operating System :: OS Independent',
+        ],
+
+        zip_safe=True,
+        include_package_data=True,
+    )
